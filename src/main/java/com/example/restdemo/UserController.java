@@ -31,4 +31,8 @@ public class UserController {
         return userRepository.findAll();
     }
 
+    @GetMapping("/api/test")
+    public String getTest() {
+        return "test lol";
+    }
 }
